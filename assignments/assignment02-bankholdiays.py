@@ -18,4 +18,18 @@ while event_index < len(data['northern-ireland']['events']):
 
 
     
+
 print(bank_holidays_dates)
+
+
+# tricky part
+# Program prints the bank holidays that are unique to northern Ireland
+# (i.e. do not happen elsewhere in the UK)
+
+uk_bank_holidays = []
+
+for region in data:
+    print(region)
+    for event in data[region]['events']: 
+        if 'bank' in event['title']: 
+            print(event['title'])  
