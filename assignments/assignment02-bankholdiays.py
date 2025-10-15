@@ -22,14 +22,49 @@ while event_index < len(data['northern-ireland']['events']):
 print(bank_holidays_dates)
 
 
-# tricky part
+# tricky part   DATES
 # Program prints the bank holidays that are unique to northern Ireland
 # (i.e. do not happen elsewhere in the UK)
 
-uk_bank_holidays = []
+uk_bank_holidays_dates = []
 
 for region in data:
-    print(region)
-    for event in data[region]['events']: 
-        if 'bank' in event['title']: 
-            print(event['title'])  
+    if region != 'northern-ireland':
+        for event in data[region]['events']:
+            uk_bank_holidays_dates.append(event['date'])
+
+print("Other UK:", uk_bank_holidays_dates)
+
+
+
+
+unique_bank_holidays_ie = []
+
+for date in bank_holidays_dates:
+    if date not in uk_bank_holidays_dates:
+        unique_bank_holidays_ie.append(date)
+
+
+print("Unique dates for Northern-Ireland:", unique_bank_holidays_ie)
+
+
+# tricky part   TITLES
+# Program prints the bank holidays that are unique to northern Ireland
+# (i.e. do not happen elsewhere in the UK)
+
+uk_bank_holidays_titles = []
+
+for region in data:
+    if region != 'northern-ireland':
+        if 'bank' in event['title']:
+            for event in data[region]['events']:
+                uk_bank_holidays_titles.append(event['title'])
+
+
+unique_bank_holidays_titles_ie = []
+
+for event in data['northern-ireland']['events']:
+    if event['title'] not in uk_bank_holidays_titles:
+        unique_bank_holidays_titles_ie.append(event['title'])
+
+print("Unique holidays for NI:", unique_bank_holidays_titles_ie)
