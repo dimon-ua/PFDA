@@ -1,6 +1,8 @@
-# Program gets Link with JSON format, decode it in dict and make a selection of Bank Holidays dates
+# Program gets Link with JSON format, decode it in dict-format and make a selection of Bank Holidays dates
 # Author: Dima Kozlovskyy 
+#
 import requests
+
 
 url = "https://www.gov.uk/bank-holidays.json"
 response = requests.get(url)
@@ -16,10 +18,9 @@ while event_index < len(data['northern-ireland']['events']):
         
     event_index += 1
 
-
     
+print("Northern Ireland:", bank_holidays_dates)
 
-print(bank_holidays_dates)
 
 
 # tricky part   DATES
@@ -81,4 +82,6 @@ for event in data['northern-ireland']['events']:
 
 print(unique_bank_holidays_titles_ie)
 
-
+# looks like it doesnt work propely, needs to make some changes
+# looks like it doesnt work propely, needs to make some changes
+# looks like it doesnt work propely, needs to make some changesа пвапв
