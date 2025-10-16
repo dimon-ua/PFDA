@@ -81,3 +81,5 @@ for event in data['northern-ireland']['events']:
         unique_bank_holidays_titles_ie.append(event['title'])
 
 print(unique_bank_holidays_titles_ie)
+
+# looks like it doesnt work propely, needs to make some changes
