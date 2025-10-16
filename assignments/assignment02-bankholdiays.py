@@ -83,5 +83,3 @@ for event in data['northern-ireland']['events']:
 print(unique_bank_holidays_titles_ie)
 
 # looks like it doesnt work propely, needs to make some changes
-# looks like it doesnt work propely, needs to make some changes
-# looks like it doesnt work propely, needs to make some changesа пвапв
