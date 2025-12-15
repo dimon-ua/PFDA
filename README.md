@@ -50,26 +50,3 @@ If you want, I can add a `requirements.txt` with exact versions.
   python assignment02-bankholdiays.py
   ```
 
-## Notes & suggested improvements
-
-- Fix the `assignment02-bankholdiays.py` filename typo to `assignment02-bankholidays.py` for consistency.
-- Add a top-level `requirements.txt` (or `environment.yml`) to pin package versions so others reproduce results.
-- If assignments depend on external data files, add a short `DATA.md` or a `data/` folder and reference it here with instructions where to put downloaded files.
-- Add a short “Objective” and “Expected output” section to each notebook so reviewers know what to check.
-- Consider converting simple `.py` scripts to notebooks (or vice versa) for consistent delivery.
-
-## Contribution & grading checklist (for maintainers / students)
-
-- [ ] Ensure each assignment includes a short description/objective at the top.
-- [ ] Confirm all data required by the notebooks is committed or linked with download instructions.
-- [ ] Ensure notebooks run from top to bottom without errors in a clean environment.
-- [ ] Add tests or a small validation script (optional) to verify outputs for grading.
-
-## Next steps I can take for you
-
-- Open each file and generate a concise summary of what it does (I can extract titles, cell outputs, and code highlights).
-- Create or update this `assignments/README.md` in the repository.
-- Add `requirements.txt` with detected packages and versions.
-- Rename the typo file and update references.
-
-Tell me which of the next steps you'd like me to do (summarize files, commit the README, add requirements, rename file, etc.), and I will proceed.
