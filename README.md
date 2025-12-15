@@ -10,7 +10,6 @@ This folder contains the course/homework assignments for the PFDA repository. Ea
 - `assignment05-population.ipynb` — Population data exploration and visualizations.
 - `assignment_6_Weather.ipynb` — Weather dataset analysis (time series / plots).
 
-> If any file names or descriptions above are inaccurate, I can open each file and extract a short summary to replace these placeholders.
 
 ## Prerequisites
 
@@ -32,8 +31,6 @@ source .venv/bin/activate        # macOS / Linux
 pip install -U pip
 pip install jupyter pandas numpy matplotlib seaborn
 ```
-
-If you want, I can add a `requirements.txt` with exact versions.
 
 ## How to run
 
